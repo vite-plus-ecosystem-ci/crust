@@ -4,8 +4,8 @@ packages:
   - scripts
 
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@1.0.0
-  vite-plus: 1.0.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.6a30b43184ad1c159091d51d728ee8c249392aa1
+  vite-plus: 0.0.0-commit.6a30b43184ad1c159091d51d728ee8c249392aa1
 
 overrides:
   # Vite plugins resolve the same Vite+ core that `vp build`/`vp test` run on.
@@ -25,18 +25,18 @@ allowBuilds:
 minimumReleaseAgeExclude:
   # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
   - vite-plus
-  - '@voidzero-dev/*'
-  - '@oxc-project/*'
+  - "@voidzero-dev/*"
+  - "@oxc-project/*"
   - oxlint
-  - '@oxlint/*'
+  - "@oxlint/*"
   - oxfmt
-  - '@oxfmt/*'
+  - "@oxfmt/*"
   - oxlint-tsgolint
-  - '@oxlint-tsgolint/*'
+  - "@oxlint-tsgolint/*"
   - vitest
-  - '@vitest/*'
+  - "@vitest/*"
   - tinybench
   - yuku-core
   - yuku-parser
-  - '@yuku-core/*'
-  - '@yuku-toolchain/*'
+  - "@yuku-core/*"
+  - "@yuku-toolchain/*"
