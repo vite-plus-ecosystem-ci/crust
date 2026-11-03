@@ -447,6 +447,9 @@ importers:
       '@tsdown/exe':
         specifier: 0.23.4
         version: 0.23.4(tsdown@0.23.4)
+      tsdown:
+        specifier: 0.23.4
+        version: 0.23.4(@arethetypeswrong/core@0.18.5)(@tsdown/exe@0.23.4)(publint@0.3.25)(typescript@7.0.2)
 
   packages/effect:
     dependencies:
