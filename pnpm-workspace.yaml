@@ -6,8 +6,8 @@ packages:
 catalog:
   # The docs examples type-check against @crustjs/effect, so both must resolve one copy.
   effect: 4.1.1
-  vite: npm:@voidzero-dev/vite-plus-core@1.4.0
-  vite-plus: 1.4.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.943ee4a9e322a7ad4b1b4113f844cd541a10b159
+  vite-plus: 0.0.0-commit.943ee4a9e322a7ad4b1b4113f844cd541a10b159
 
 overrides:
   # Vite plugins resolve the same Vite+ core that `vp build`/`vp test` run on.
@@ -27,18 +27,18 @@ allowBuilds:
 minimumReleaseAgeExclude:
   # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
   - vite-plus
-  - '@voidzero-dev/*'
-  - '@oxc-project/*'
+  - "@voidzero-dev/*"
+  - "@oxc-project/*"
   - oxlint
-  - '@oxlint/*'
+  - "@oxlint/*"
   - oxfmt
-  - '@oxfmt/*'
+  - "@oxfmt/*"
   - oxlint-tsgolint
-  - '@oxlint-tsgolint/*'
+  - "@oxlint-tsgolint/*"
   - vitest
-  - '@vitest/*'
+  - "@vitest/*"
   - tinybench
   - yuku-core
   - yuku-parser
-  - '@yuku-core/*'
-  - '@yuku-toolchain/*'
+  - "@yuku-core/*"
+  - "@yuku-toolchain/*"
