@@ -1,5 +1,11 @@
 # @crustjs/style
 
+## 0.3.7
+
+### Patch Changes
+
+- [#539](https://github.com/chenxin-yan/crust/pull/539) [`ce12aed`](https://github.com/chenxin-yan/crust/commit/ce12aed7a34275c49b54340d1995378afedfa2a6) Thanks [@chenxin-yan](https://github.com/chenxin-yan)! - Remove the `engines.deno` declaration; Deno is no longer supported.
+
 ## 0.3.6
 
 ### Patch Changes

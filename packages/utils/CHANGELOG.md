@@ -1,5 +1,19 @@
 # @crustjs/utils
 
+## 0.3.0
+
+### Minor Changes
+
+- [#510](https://github.com/chenxin-yan/crust/pull/510) [`6fdb8a6`](https://github.com/chenxin-yan/crust/commit/6fdb8a642b79a176d60d9a3d4be3431493201052) Thanks [@chenxin-yan](https://github.com/chenxin-yan)! - `tryCoerceNumber` returns `undefined` for empty or whitespace-only input instead of `0`. Store `type: "number"` fields reject a persisted blank string with a `VALIDATION` error instead of reading it as `0`, and `@crustjs/env` reports `PORT=""` as invalid for `type: "number"`, as documented.
+
+- [#539](https://github.com/chenxin-yan/crust/pull/539) [`ce12aed`](https://github.com/chenxin-yan/crust/commit/ce12aed7a34275c49b54340d1995378afedfa2a6) Thanks [@chenxin-yan](https://github.com/chenxin-yan)! - Drop Deno support. Crust now targets Bun and Node.js only.
+  
+  - `@crustjs/crust`: `crust.runtime: "deno"` and Deno targets are removed; `deno.json`/`deno.jsonc` no longer selects a runtime. `--minify` now defaults to `true` in `--help`.
+  - `create-crust`: `--runtime deno` is no longer accepted.
+  - `@crustjs/utils`: `PACKAGED_BUILD_KEY` and `isPackagedBuild` are removed from `@crustjs/utils/artifacts`, and Deno compiled executables are no longer detected.
+  - `@crustjs/core`: the snapshot protocol no longer checks the packaged-build marker.
+  - `@crustjs/mcp`: Deno standalone builds are no longer detected as compiled executables.
+
 ## 0.2.2
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@crustjs/style",
-	"version": "0.3.6",
+	"version": "0.3.7",
 	"description": "Terminal styling, colors, hyperlinks, and ANSI-aware text layout",
 	"type": "module",
 	"sideEffects": false,
