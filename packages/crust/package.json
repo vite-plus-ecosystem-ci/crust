@@ -55,7 +55,8 @@
 		"@crustjs/style": "workspace:^"
 	},
 	"optionalDependencies": {
-		"@tsdown/exe": "0.23.7"
+		"@tsdown/exe": "0.23.7",
+		"tsdown": "0.23.7"
 	},
 	"peerDependencies": {
 		"@crustjs/core": "^0.6.0"
