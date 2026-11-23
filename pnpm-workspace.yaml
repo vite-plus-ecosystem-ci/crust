@@ -6,8 +6,8 @@ packages:
 catalog:
   # The docs examples type-check against @crustjs/effect, so both must resolve one copy.
   effect: 4.1.5
-  vite: npm:@voidzero-dev/vite-plus-core@8.3.8000
-  vite-plus: 1.7.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
+  vite-plus: 0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
 
 overrides:
   # Vite plugins resolve the same Vite+ core that `vp build`/`vp test` run on.
@@ -22,3 +22,18 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - fumadocs-core@16.19.7
   - fumadocs-ui@16.19.7
+  - "@voidzero-dev/vite-plus-core@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8"
+  - "@voidzero-dev/vite-plus-darwin-arm64@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8"
+  - "@voidzero-dev/vite-plus-darwin-x64@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8"
+  - "@voidzero-dev/vite-plus-linux-arm64-gnu@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8"
+  - "@voidzero-dev/vite-plus-linux-arm64-musl@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8"
+  - "@voidzero-dev/vite-plus-linux-x64-gnu@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8"
+  - "@voidzero-dev/vite-plus-linux-x64-musl@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8"
+  - "@voidzero-dev/vite-plus-win32-arm64-msvc@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8"
+  - "@voidzero-dev/vite-plus-win32-x64-msvc@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8"
+  - vite-plus@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"
